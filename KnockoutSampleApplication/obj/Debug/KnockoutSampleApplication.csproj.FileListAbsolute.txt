@@ -1,0 +1,6 @@
+c:\users\devendrar\documents\visual studio 2015\Projects\KnockoutSampleApplication\KnockoutSampleApplication\bin\KnockoutSampleApplication.dll.config
+c:\users\devendrar\documents\visual studio 2015\Projects\KnockoutSampleApplication\KnockoutSampleApplication\bin\KnockoutSampleApplication.dll
+c:\users\devendrar\documents\visual studio 2015\Projects\KnockoutSampleApplication\KnockoutSampleApplication\bin\KnockoutSampleApplication.pdb
+c:\users\devendrar\documents\visual studio 2015\Projects\KnockoutSampleApplication\KnockoutSampleApplication\obj\Debug\KnockoutSampleApplication.csprojResolveAssemblyReference.cache
+c:\users\devendrar\documents\visual studio 2015\Projects\KnockoutSampleApplication\KnockoutSampleApplication\obj\Debug\KnockoutSampleApplication.dll
+c:\users\devendrar\documents\visual studio 2015\Projects\KnockoutSampleApplication\KnockoutSampleApplication\obj\Debug\KnockoutSampleApplication.pdb

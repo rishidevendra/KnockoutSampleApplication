@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/jquery-3.1.0.js"></script>
+    <script src="Scripts/knockout-3.4.0.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>TypeScript HTML App</h1>
+
+    <div id="content">
+
+        <h3 data-bind="text:realtime"> Monkey</h3>
+        <input type="text" data-bind="value: realtime, valueUpdate:'afterkeydown'" />
+        <input type="submit" value="Add" data-bind="click: addData" />
+        <ul data-bind="foreach: arrays">
+            <li data-bind="text: $data"></li>
+        </ul>
+
+
+        <h3> Grid Example </h3>
+        <form id="frmGift">
+            <p>You have asked for <span data-bind='text: gifts().length'>&nbsp;</span> gift(s)</p>
+            <table data-bind='visible: gifts().length > 0'>
+                <thead>
+                    <tr>
+                        <th>Gift name</th>
+                        <th>Price</th>
+                        <th />
+                    </tr>
+                </thead>
+                <tbody data-bind='foreach: gifts'>
+                    <tr>
+                        <td><input class='required' data-bind='value: name, uniqueName: true' /></td>
+                        <td><input class='required number' data-bind='value: price, uniqueName: true' /></td>
+                        <td><a href='#' data-bind='click: $root.removeGift'>Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <input type="button" value="Add Gift" data-bind='click: addGift' />
+            <button data-bind='enable: gifts().length > 0' type='submit'>Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
